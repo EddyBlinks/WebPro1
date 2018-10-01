@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+		<link rel="stylesheet"type="text/css"href="webEnt7.css"/>
+		<script src="webEnt7.js"></script>
+		<meta name="viewport:" content="with=device width, inittial-scale=1,schrink-to-fit=no">
+		<title>webent7.com</title>
+		<link rel="stylesheet" href="">
+</head>
+<body>
+<div class = "Units">
+		<div id = "dropDownButton">
+  			<button onclick = "myDropDownFunction()" class = "dropDownButton">please choose what to convert</button>
+						<div id = "myUnitList" class = "dropDownContent hide">
+	      				<button id = "tempID" onclick  ="toggleFunction(this)">Temperature</button></br>
+								<div id = "tempRechnung" class = "hide">
+									<form action>
+										<select onchange="hideConverter(document.getElementsByName('MyConverter')[0].value)" name="MyConverter">
+											<option value="unit">select unit to convert</option>
+											<option value="Temp">Temperature</option>
+											<option value="Len">Length</option>
+											<option value="Len">time</option>
+											<option value="Len">Area</option>
+											<option value="Len">weight</option>
+											</select>
+										<br><br>
+									</form>
+									<!--HTML for temprature conversion-->
+												<div id="tempDiv" class = "spin" >
+														<form>
+															farenheit: 	<input type="number" name="fahren" value=" "></br>
+															celsius:	</br>	<input type="number" name="cell" value=" ">
+														</form>
+														<button onclick = "convertTemp(document.getElementsByName('fahren')[0].value,document.getElementsByName('cell')[0].value)">convert</button>
+												</div>
+												<br><br>
+
+									<!--HTML for length conversion -->
+
+										<div id="lengthDiv" class="ekow">
+											<form>
+												meter: </br>	<input type="number" name="meter" value=" ">
+												centimeter:		<input type="number" name="centimeter" value=" ">
+											</form>
+											<button onclick = "convertlength(document.getElementsByName('meter')[0].value,document.getElementsByName('centimeter')[0].value)">convert</button>
+										</div>
+							</div>
+								<button id = "lengthID" onclick  = "toggleFunction(this)">Length</button></br>
+	      				<button id = "zeitID" onclick  = "toggleFunction(this)">Time</button></br>
+	      				<button id = "weightID" onclick  = "toggleFunction(this)">Weight</button></br>
+    			</div>
+		</div>
+	</div>
+</body>
