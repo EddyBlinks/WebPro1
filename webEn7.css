@@ -47,23 +47,3 @@
 
   display: none;
 }
-
-#tempID{
-  background-color: #3399ff;
-}
-
-#lengthID{
-  background-color: #3399ff;
-}
-
-#zeitID{
-  background-color: #3399ff;
-}
-
-#weightID{
-  background-color: #3399ff;
-}
-
-.hideConverter{
-  background-color: blue;
-}

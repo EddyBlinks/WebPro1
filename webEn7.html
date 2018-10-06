@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+		<link rel="stylesheet"type="text/css"href="webEnt8.css"/>
+		<script src="webEnt8.js"></script>
+		<meta name="viewport:" content="with=device width, iniglatial-scale=1,schrink-to-fit=no">
+		<title>webent8.com</title>
+		<link rel="stylesheet" href="">
+</head>
+<body>
+  <div class = "Units">
+		  <div id = "dropDownButton">
+  			<button onclick = "myDropDownFunction()" class = "dropDownButton">please choose what to convert</button>
+						<div id = "myUnitList" class = "dropDownContent hide">
+	      				<button id = "tempID" onclick  ="toggleFunction(this)">Temperature</button></br>
+                    <div id = "tempDiv" class = "hide" >
+                        <form>
+                            farenheit: </br> 	<input type="number" name="fahren" value=" "></br>
+                            celsius:	</br>	<input type="number" name="cell" value=" "></br>
+                            </br><button id = "toConvert" onclick = "convertTemp(document.getElementsByName('fahren')[0].value,document.getElementsByName('cell')[0].value)">Convert</button>
+                        </form>
+                  </div>
+                <button id = "lengthID" onclick  = "toggleFunction(this)">Length</button></br>
+	      				<button id = "zeitID" onclick  = "toggleFunction(this)">Time</button></br>
+	      				<button id = "weightID" onclick  = "toggleFunction(this)">Weight</button></br>
+    			</div>
+      </div>
+  </div>
+</body>
