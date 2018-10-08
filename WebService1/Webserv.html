@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang ="en-US">
+<head>
+    <meta charset="utf-8" />
+    <title>Anmeldungseite</title>
+
+		<meta name="viewport:" content="with=device width, iniglatial-scale=1,schrink-to-fit=no">
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="webserv.js"></script>
+
+    <link rel="stylesheet"type="text/css"href="webserv.css"/>
+		<link rel="stylesheet" href="">
+</head>
+<body>
+  <div class = "login-page">
+    <div class = "form">
+      <form class = "Registration-form">
+        <input type = "text" placeholder="Username"/>
+        <input type = "text" placeholder="Password"/>
+        <input type = "text" placeholder="email id"/>
+        <button>Create</button>
+        <p class ="message">Have an account? <a href="#">Login</a>
+        </p>
+        </form>
+
+        <form class = "login-form">
+        <input type = "text" placeholder="Username"/>
+        <input type = "password" placeholder="Password"/>
+        <button>login</button>
+        <p class="message">Not Registered? <a href="#">Register</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyBrD7_XDYwNwbnKcT20mOq2aID-_hBFnsg",
+          authDomain: "webserv1-884a3.firebaseapp.com",
+          databaseURL: "https://webserv1-884a3.firebaseio.com",
+          projectId: "webserv1-884a3",
+          storageBucket: "webserv1-884a3.appspot.com",
+          messagingSenderId: "674102144425"
+        };
+        firebase.initializeApp(config);
+  </script>
+
+  </body>
